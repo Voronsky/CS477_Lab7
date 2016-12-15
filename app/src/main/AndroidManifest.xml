@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ivan.lab7_services">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".MusicService"></service>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".receiver_vibrate" android:enabled="true" android:exported="true">
+            <intent-filter>
+               <action android:name="broadcast_vibrate_RECEIVER_customIntent1"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver_alarm" android:enabled="true" android:exported="true">
+            <intent-filter >
+               <action android:name="broadcast_alarm_RECEIVER_customIntent2"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

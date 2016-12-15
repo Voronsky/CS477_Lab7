@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ivan.lab7_services.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab7 Idiaz3, G00711429, Ivan Diaz" />
+
+    <Button
+        android:text="Click to start music service!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:text=""
+        android:hint="Type in the number of miliseconds"
+        android:textSize="12dp"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getTimeInput"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Click to start music in app!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart2"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/alarmBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Start Alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/alarmBtn"
+        android:layout_below="@+id/getTimeInput"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
